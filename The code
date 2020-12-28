@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+	int K;
+	int prev, cur, out, i;
+	printf("enter integer K>2\n");
+	scanf("%d", &K);
+
+	prev=1; 
+	cur=0;
+
+	for (i=0; i<K; i++)
+	{
+		out=prev+cur;
+		printf("%d\t", out);
+		prev=cur;
+		cur=out;
+	}
+	printf("\n");
+	return 0;
+}
